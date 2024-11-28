@@ -1,0 +1,24 @@
+table{border-radius: 15px 15px 15px 15px;
+border-style: solid;
+border-color: grey;
+background-color: rgb(247, 244, 194);}
+
+.input1{height:35px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: green;}
+
+.input2{height: 50px;
+    color: white;
+    padding: 15px;
+    background-color: grey;
+    border-radius: 10px;
+    border-color: green;
+    border-style: outset;
+    }
+
+
+.fontt{font-family:"Comic Sans MS";/* Comic Sans MS */
+        color:brown;
+        font-weight: bold;}
+    

@@ -1,0 +1,9 @@
+img{
+    height: 400px;
+    width: 600px;
+    z-index: -1;
+    position: absolute;
+}
+p{
+    color:red;
+}

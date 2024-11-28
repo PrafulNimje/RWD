@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="CSS/formcss.css">
+</head>
+<body>
+    <center>
+    <table cellspacing="20px">
+        <tr><th colspan="2"><h3>Student Details</h3></th></tr>
+        <form>
+            <tr>
+                <td><label class="fontt">First Name:</label></td>
+                <td><input class="input1" type="text" name="first"><br></td>
+            </tr>
+            <tr>
+                <td><label class="fontt">Last Name:</label></td>
+                <td><input class="input1" type="text" name="last"><br></td>
+            </tr>
+            <tr>
+                <td><label class="fontt">Email:</label></td>
+                <td><input class="input1" type="email" name="email"><br></td>
+            </tr>
+            <tr>
+                <td><label class="fontt">Gender:</label></td>
+                <td><input type="radio" name="gender" value="Male">Male
+                    <input type="radio" name="gender" value="Female">Female
+                    <input type="radio" name="gender" value="Other">Other
+                </td>
+            </tr>
+            <tr>
+                <td><label class="fontt">Age:</label></td>
+                <td><input class="input1" type="number" name="age"><br></td>
+            </tr>
+            <tr>
+                <td><label class="fontt">Joining Date:</label></td>
+                <td><input class="input1" type="date" name="joindate"><br></td>
+            </tr>
+            <tr>
+                <td><label class="fontt">Course Completed:</label></td>
+                <td><input  type="checkbox" name="c">C Programming
+                    <input  type="checkbox" name="sql">SQL<br>
+                    <input  type="checkbox" name="mongodb">MongoDB
+                    <input  type="checkbox" name="RWD">RWD
+                    <input  type="checkbox" name="java">Core Java</td>
+            </tr>
+            <tr>
+                <td><label class="fontt">Address:</label></td>
+                <td><textarea class="input1" name="address"></textarea><br></td>
+            </tr>
+            <tr>
+                <td><label class="fontt">Branch:</label></td>
+                <td><select>
+                    <option value="select">Select Branch</option>
+                    <option value="Electrical">Electrical Eng.</option>
+                    <option value="CSE">Comp Science and Eng.</option>
+                    <option value="Civil">Civil Eng.</option>
+                    <option value="Mechanical">Mechanical Eng.</option>
+                </select></td>
+            </tr>
+            <tr>
+                
+                <td colspan="2" align="center">
+                    <input class='input2' type="reset" value="Reset" style="font-family:Comic Sans MS ;">
+                    <input class='input2' type="submit" value="Submit" style="font-family:Comic Sans MS ;">
+                </td>
+            </tr>
+        </form>
+    </table>
+</center>
+</body>
+</html>

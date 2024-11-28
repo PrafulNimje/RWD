@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS Switch</title>
+   <script> 
+    var len=10;
+    var br=15;
+    var hgt = 20;
+    var base = 20;
+    var rad = 8;
+
+    var ch="rectangle";
+    switch(ch){
+        case "circle":
+                    ans = 3.14 * rad *rad;
+                    document.write("Area of Circle: "+ans);
+                    break;
+        case "triangle":
+                    ans = 0.5 * base * hgt;
+                    document.write("Area of Triangle: "+ans);
+                    break;
+        case "rectangle":
+                    ans = len * br;
+                    document.write("Area of Rectangle: "+ans);
+                    break;
+        default: document.write("Invalid choice");
+                 break;
+    }
+</script>
+</head>
+<body>
+    
+</body>
+</html>

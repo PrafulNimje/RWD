@@ -1,0 +1,25 @@
+h2{ font-size: 30px;
+    color: darkred;
+    text-decoration: underline green;}
+
+.legend1{ text-align: center;
+    color: #022d02;
+    font-size: 30px;
+    text-decoration:underline;
+    text-decoration-style: dotted;
+    letter-spacing: 2px;
+    background-color: aquamarine;
+    }
+
+li::marker{color: red;
+}
+
+legend{text-align: center;
+    letter-spacing: 2px;
+    font-size: 30px;
+    color: #022d02;
+    background-color: aquamarine;}
+
+fieldset{border:5px dotted darkred;
+box-shadow: 0 0 20px rgba(74, 71, 71, 0.978);
+margin-top: 50px;}

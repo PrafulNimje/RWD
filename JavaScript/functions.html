@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS Functions</title>
+    <script type="text/javascript" src="JS/function.js">
+    </script>
+    
+    <script>
+        
+        var num=15;
+        var ch="evenodd"; // square/ cube / evenodd
+        switch(ch){
+            case "square": 
+                        var sq = sqr(num);
+                        document.write("Square: "+sq);
+                        break;
+            case "cube": var cb = cbe(num);
+                        document.write("Cube: "+cb);
+                        break;
+            case "evenodd": var eo = evenodd(num);
+                            document.write("Number is "+eo);
+                            break;
+                        
+            default:document.write("Invalid choice");
+                    break;
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

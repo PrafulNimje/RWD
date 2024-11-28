@@ -1,0 +1,26 @@
+th
+{
+    color: blue;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+td
+{
+    color: red;
+    font-family:Segoe Print;
+}
+.MHeding
+{
+    color: black;
+    background-image: url('pencil.png');
+    background-size: cover;
+}
+.lunch
+{
+    background-image: url('lunch.png');
+    background-size: cover;
+    color: white;
+}
+
+.thstyle{
+    font-family:"Harrington" ;
+}
