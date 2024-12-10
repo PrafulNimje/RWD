@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="CSS/formcss.css">
+    <script type="text/javascript" src="JS/studdetails.js"></script>
+</head>
+<body>
+    <center>
+    <table cellspacing="20px">
+        <tr><th colspan="2"><h3>Student Details</h3></th></tr>
+        <form>
+            <tr>
+                <td><label class="fontt" >First Name:</label></td>
+                <td><input class="input1" type="text" name="first" id="f1"><br></td>
+            </tr>
+            <tr>
+                <td><label class="fontt">Last Name:</label></td>
+                <td><input class="input1" type="text" name="last" id="l1"><br></td>
+            </tr>
+            
+            <tr>
+                <td><label class="fontt">Gender:</label></td>
+                <td><input type="radio" name="gender" id="r1">Male
+                    <input type="radio" name="gender" id="r2">Female
+                    
+                </td>
+            </tr>
+            <!-- Select Course Section -->
+             <tr>
+                <td><label class="fontt">Course:</label></td>
+                <td><select  id="s1"  style="height: 40px; width: 150px;" >
+                        <option value="select">Select a Course</option>
+                        <option value="FSD JAVA">FSD JAVA</option>
+                        <option value="FSD .NET Core">FSD .NET Core</option>
+                        <option value="JAVA with AI/ML">JAVA with AI/ML</option>
+                        <option value="Software Testing">Software Testing</option>
+                        <option value="SAP">SAP</option>
+                    </select>
+                </td>
+             </tr>
+
+            
+            <tr>
+                <td><label class="fontt">Modules Done:</label></td>
+                <td><input  type="checkbox" id="c" value="C Programming">C Programming
+                    <input  type="checkbox" id="sql" value="SQL">SQL<br>
+                    <input  type="checkbox" id="mongodb" value="MongoDB">MongoDB
+                    <input  type="checkbox" id="RWD" value="RWD">RWD
+                    <input  type="checkbox" id="java" value="Core Java">Core Java</td>
+            </tr>
+            <!-- Center section -->
+            <tr>
+                <td><label class="fontt">Center:</label></td>
+                <td><select  id="c1" value="center" style="height: 40px;width: 150px;">
+                    <option value="select">Select a Center</option>
+                    <option value="Kothrud">Kothrud</option>
+                    <option value="Hinjewadi">Hinjewadi</option>
+                    <option value="Sinhgadh">Sinhgadh Road</option>
+                                      
+                </select></td>
+             </tr>
+            <!-- Percentage Section -->
+            <tr>
+                <td><label class="fontt" >Percentage:</label></td>
+                <td><input id="t1"  class="input1" type="number" name="percentage"><br></td>
+            </tr>
+            <tr>
+                
+                <td colspan="2" align="center">
+                    <input class='input2' type="button" value="Submit" onClick="studentDetails()">
+                </td>
+            </tr>
+        </form>
+    </table>
+</center>
+
+<p id='name'></p>
+<p id ='percent'></p>
+<p id='course'></p>
+<p id='center'></p>
+<p id='modules'></p>
+</body>
+</html>

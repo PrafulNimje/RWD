@@ -1,0 +1,139 @@
+javascript DOM
+----------
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Javascript demo</title>
+	<script type="text/javascript">
+		function add() 
+		{
+			var num1 = parseInt(document.form1.num1.value);
+			var num2 = parseInt(document.form1.num2.value);
+			document.form1.ans.value = num1+num2;
+		}
+	</script>
+</head>
+<body onload="alert('page load')">
+	<form name="form1"> 
+		<label>Enter 1st number:</label><input type="text" name="num1"><br>
+		<label>Enter 2nd number:</label><input type="text" name="num2"><br>
+		<label>Addition = :</label><input type="text" name="ans"><br>
+		<input type="button" name="btn1" value="Addition" onClick="add()">
+	</form>
+</body>
+</html>
+------------------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Javascript demo</title>
+	<script type="text/javascript">
+		function findSquare()
+		{
+			var num1 = parseInt(document.getElementById('n1').value)
+			document.getElementById('sq').value = num1*num1
+		}
+	</script>
+</head>
+<body">
+	<form> 
+		<label>Enter number:</label><input type="text" name="num1" id="n1"><br>
+		<label>Square = :</label><input type="text" name="ans" id="sq"><br>
+		<input type="button" name="btn1" value="Square Calculate" onClick="findSquare()">
+	</form>
+</body>
+</html>
+------------------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Javascript demo</title>
+	<script type="text/javascript">
+		function readContent()
+		{
+			var str = document.getElementsByClassName("para1")[0].innerHTML;
+			document.getElementsByTagName('p')[3].innerHTML = str;
+			//document.getElementById('test').innerHTML = str;
+		}
+	</script>
+</head>
+<body>
+	<p class="para1">This is paragraph1</p>
+
+	<p>This is paragraph2 </p>
+
+	<p class="para1">This is paragraph3</p>
+
+	<p> This is paragraph4 </p>
+
+	<p class="para1"> This is paragraph1</p>
+
+	<button onclick="readContent()">Change Content</button>
+
+	<p id="test"></p>
+</body>
+</html>
+------------------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Javascript demo</title>
+	<script type="text/javascript">
+		function colorRed()
+		{
+			document.getElementById('para1').style.color ='red';
+		}
+		function colorBlack()
+		{
+			document.getElementById('para1').style.color ='black';	
+		}
+	</script>
+</head>
+<body>
+	<p id='para1' onMouseEnter="colorRed()" onMouseLeave="colorBlack()">
+		this is paragraph
+	</p>
+</body>
+</html>
+------------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Javascript demo</title>
+	<script type="text/javascript">
+		function fun1()
+		{
+			document.getElementById('txt1').style.backgroundColor ='yellow';	
+		}
+		function fun2()
+		{
+			document.getElementById('txt1').style.backgroundColor ='white';	
+		}
+		function fun3()
+		{
+			document.getElementById('txt2').style.backgroundColor ='yellow';	
+		}
+		function fun4()
+		{
+			document.getElementById('txt2').style.backgroundColor ='red';	
+		}
+	</script>
+</head>
+<body>
+	<form>
+		<input type="text" name="txt1" id="txt1" onFocus="fun1()" onblur="fun2()"><br>
+		<input type="text" name="txt2" id="txt2" onKeyDown="fun3()" onKeyUp="fun4()"><br>
+	</form>
+</body>
+</html>

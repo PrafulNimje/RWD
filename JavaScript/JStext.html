@@ -1,0 +1,31 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Javascript demo</title>
+	<script type="text/javascript">
+		function fun1()
+		{
+			document.getElementById('txt1').style.backgroundColor ='yellow';	
+		}
+		function fun2()
+		{
+			document.getElementById('txt1').style.backgroundColor ='white';	
+		}
+		function fun3()
+		{
+			document.getElementById('txt2').style.backgroundColor ='yellow';	
+		}
+		function fun4()
+		{
+			document.getElementById('txt2').style.backgroundColor ='red';	
+		}
+	</script>
+</head>
+<body>
+	<form>
+		<input type="text" name="txt1" id="txt1" onFocus="fun1()" onblur="fun2()"><br>
+		<input type="text" name="txt2" id="txt2" onKeyDown="fun3()" onKeyUp="fun4()"><br>
+	</form>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gameplay Website</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script type="text/javascript">
+        function changeContent1(){
+            document.getElementById("div2").innerHTML = "Cricket is the most popular sport in India. It is played almost everywhere in the country.The Board of Control for Cricket in India is the governing body of Indian cricket and conduct all domestic tournaments and select the players for India national cricket team and India women's national cricket team."
+        }
+
+        function changeContent2(){
+            document.getElementById("div2").innerHTML = "Football is a family of team sports that involve, to varying degrees, kicking a ball to score a goal. Unqualified, the word football generally means the form of football that is the most popular where the word is used. Sports commonly called football include association football (known as soccer in Australia, Canada, South Africa, the United States, and sometimes in Ireland and New Zealand); Australian rules football; Gaelic football; gridiron football (specifically American football, arena football, or Canadian football); International rules football; rugby league football; and rugby union football.[1] These various forms of football share, to varying degrees, common origins and are known as football codes."
+        }
+
+        function changeContent3(){
+            document.getElementById("div2").innerHTML = "Badminton is a racquet sport played using racquets to hit a shuttlecock across a net. Although it may be played with larger teams, the most common forms of the game are singles (with one player per side) and doubles(with two players per side). Badminton is often played as a casual outdoor activity in a yard or on a beach; formal games are played on a rectangular indoor court. Points are scored by striking the shuttlecock with the racquet and landing it within the other team's half of the court."
+        }
+
+        function changeStyle(){
+            document.getElementById("div2").style.fontSize="30px";
+        }
+
+        function styleResr(){
+            document.getElementById("div2").style.fontSize="25px";
+        }
+
+    </script>
+</head>
+<body>
+    <div>
+        <div class = "header">
+                <img src="sports.png" style="height: 60px; width: 60px; margin-left: 180px;float: left; ">
+                <center><h1 style="text-align: center; color: aliceblue;">GameZone 2025</h1></center>
+                
+        </div>
+        
+        <div class="navbar">
+            <div class="navop"><a href="index.html">Home</a></div>
+            <div class="navop"><a href="event.html">Events</a></div>
+            <div class="navop"><a href="#">Ticket Bookings</a></div>
+        </div>
+        
+        <div class="images">
+            <img src="sport1.jpg" style="height:300px;width: 33.5%;margin-left: 3px;">
+            <img src="sport3.jpg" style="height:300px;width: 32%;">
+            <img src="sport2.jpg" style="height:300px;width: 33.5%;">
+
+        </div>
+
+        <div class="content">
+            <h2 style="text-align: center;">Sports</h2>
+            <div class="cont-text"><a href="#" onclick="changeContent1()">Cricket</a></div>
+            <div class="cont-text"><a href="#" onclick="changeContent2()">Football</a></div>
+            <div class="cont-text"><a href="#" onclick="changeContent3()">Badminton</a></div>
+            
+        </div>
+
+        <div id="div2" class="main" onmouseenter="changeStyle()" onmouseleave="styleResr()">Demo Text
+           
+        </div>
+
+    </div>
+</body>
+</html>
